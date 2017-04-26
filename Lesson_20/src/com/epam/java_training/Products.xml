@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductList xmlns="http://www.epam.tc.com/products">
+<ProductDetail Code="A1" Name="Футбольный мяч">
+	<Amount>20</Amount>
+	<Price>20</Price>
+	<Description>Мяч для игры в футбол</Description>
+	<Type>Для игр</Type>
+	<Status>В наличии</Status>
+	<AdditionalInfo>
+		<Country Code="US"/>
+        <Provider Name="Atlanta_1"/>
+  	</AdditionalInfo>
+</ProductDetail>
+<ProductDetail Code="A2" Name="Баскетбольный мяч">
+	<Amount>100</Amount>
+	<Price>15</Price>
+	<Description>Мяч для игры в баскетбол</Description>
+	<Type>Для игр</Type>
+	<Status>В наличии</Status>
+	<AdditionalInfo>
+        <Country Code="RU"/>
+        <Provider Name="Парус"/>
+  	</AdditionalInfo>
+</ProductDetail>
+<ProductDetail Code="B5" Name="Шашки">
+	<Amount>2</Amount>
+	<Price>2000</Price>
+	<Description>Для игры в шашки</Description>
+	<Type>Для игр</Type>
+	<Status>В ожидании</Status>
+	<AdditionalInfo>
+        <Country Code="PL"/>
+        <Provider Name="Complex"/>
+  	</AdditionalInfo>
+</ProductDetail>
+<ProductDetail Code="B11" Name="Ракетка">
+	<Amount>21</Amount>
+	<Price>115</Price>
+	<Description>Ракетка для настольного тенниса</Description>
+	<Type>Для игр</Type>
+	<Status>В наличии</Status>
+	<AdditionalInfo>
+        <Country Code="DE"/>
+        <Provider Name="Groups"/>
+  	</AdditionalInfo>
+</ProductDetail>
+</ProductList>

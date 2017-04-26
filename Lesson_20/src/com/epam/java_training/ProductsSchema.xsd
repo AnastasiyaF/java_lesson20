@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.epam.tc.com/products" xmlns:xs="http://www.epam.tc.com/products" elementFormDefault="qualified">
+	<element name="ProductList">
+        <complexType>
+			<sequence>
+				<element name="ProductDetail" type="xs:ProductDetail" minOccurs="1" maxOccurs="unbounded"></element>
+			</sequence>
+		</complexType>
+    </element> 
+	<complexType name="ProductDetail">
+		<sequence>
+			<element name="Amount" type="nonNegativeInteger"></element>
+			<element name="Price" type="nonNegativeInteger"></element>
+			<element name="Description" type="string"></element>
+			<element name="Type" type="string"></element>
+			<element name="Status" type="string"></element>
+			<element name="AdditionalInfo" type="xs:AdditionalInfo" minOccurs="0" maxOccurs="unbounded"></element>
+		</sequence>
+		<attribute name="Code" type="string"/>
+		<attribute name="Name" type="string"/>
+	</complexType>
+	<complexType name="AdditionalInfo">
+		<sequence>
+			<element name="Country" type="xs:CountryInfo" minOccurs="1" maxOccurs="unbounded"></element>
+			<element name="Provider" type="xs:ProviderInfo" minOccurs="1" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+	<complexType name="CountryInfo">
+		<attribute name="Code" type="string"/>
+	</complexType>
+	<complexType name="ProviderInfo">
+		<attribute name="Name" type="string"/>
+	</complexType>
+</schema>
